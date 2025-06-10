@@ -6,24 +6,35 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
+      "android": {
+        "image": "latest",
+        "ndk": "25.1.8937393"
+      },
       "ios": {
+        "image": "latest",
         "resourceClass": "m-medium"
       }
     },
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "image": "latest",
+        "ndk": "25.1.8937393"
       },
       "ios": {
+        "image": "latest",
         "resourceClass": "m-medium"
       }
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "image": "latest",
+        "ndk": "25.1.8937393"
       },
       "ios": {
+        "image": "latest",
         "resourceClass": "m-medium"
       }
     }
