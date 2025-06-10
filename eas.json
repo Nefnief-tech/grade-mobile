@@ -7,11 +7,9 @@
       "developmentClient": true,
       "distribution": "internal",
       "android": {
-        "image": "latest",
-        "ndk": "25.1.8937393"
+        "gradleCommand": ":app:assembleDebug"
       },
       "ios": {
-        "image": "latest",
         "resourceClass": "m-medium"
       }
     },
@@ -19,22 +17,18 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk",
-        "image": "latest",
-        "ndk": "25.1.8937393"
+        "gradleCommand": ":app:assembleRelease"
       },
       "ios": {
-        "image": "latest",
         "resourceClass": "m-medium"
       }
     },
     "production": {
       "android": {
         "buildType": "app-bundle",
-        "image": "latest",
-        "ndk": "25.1.8937393"
+        "gradleCommand": ":app:bundleRelease"
       },
       "ios": {
-        "image": "latest",
         "resourceClass": "m-medium"
       }
     }

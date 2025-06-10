@@ -30,18 +30,18 @@ read -p "Enter choice (1-3): " choice
 
 case $choice in
     1)
-        echo "📱 Building preview APK..."
-        eas build --profile preview --platform android --non-interactive
+        echo "📱 Building preview APK on EAS servers..."
+        eas build --profile preview --platform android --no-local --non-interactive
         ;;
     2)
-        echo "🏪 Building production app bundle..."
-        eas build --profile production --platform android --non-interactive
+        echo "🏪 Building production app bundle on EAS servers..."
+        eas build --profile production --platform android --no-local --non-interactive
         ;;
     3)
-        echo "📱 Building preview APK..."
-        eas build --profile preview --platform android --non-interactive
-        echo "🏪 Building production app bundle..."
-        eas build --profile production --platform android --non-interactive
+        echo "📱 Building preview APK on EAS servers..."
+        eas build --profile preview --platform android --no-local --non-interactive
+        echo "🏪 Building production app bundle on EAS servers..."
+        eas build --profile production --platform android --no-local --non-interactive
         ;;
     *)
         echo "❌ Invalid choice"
